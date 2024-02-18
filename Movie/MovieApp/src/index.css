@@ -1,0 +1,9 @@
+
+.gradient-custom {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
