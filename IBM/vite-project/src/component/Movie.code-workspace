@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Movie",
+			"path": "../../../../MOVIE/demo-main/Movie"
+		},
+		{
+			"name": "VITE",
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}

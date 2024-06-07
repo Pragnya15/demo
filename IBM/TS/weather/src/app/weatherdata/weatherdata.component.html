@@ -1,0 +1,59 @@
+<!-- <p>weatherdata works!</p>
+ <p>{{data.name}}</p>
+<p>{{data.weather[0].description }}</p> 
+<p>{{data.main.temp}}</p>
+<p>{{data.main.humidity}}</p>
+
+<select name="cities" id="cities" [(ngModel)]="cityName" (change)="getWeather()">
+    <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+</select>
+<img src={{weatherImages[data.weather[0].description.toLowerCase()]}} height="200px" width="250px">
+
+ -->
+
+ <section class="vh-100" style="background-color: #4B515D;">
+  <div class="container py-5 h-100">
+
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+
+        <div class="card" style="color: #4B515D; border-radius: 35px;">
+          <div class="card-body p-4">
+
+            <div class="d-flex">
+              <!-- <select name="cities" id="cities" [(ngModel)]="cityName" (change)="getWeather()">
+                  <option *ngFor="let city of cities" [value]="city">{{city}}</option>
+              </select> -->
+              <div class="input-group">
+                  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" [(ngModel)]="search"/>
+                  <button type="button" class="btn btn-outline-primary" data-mdb-ripple-init (click)="getWeather()">SEARCH</button>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column text-center mt-5 mb-4">
+              <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;">{{data.main.temp}} K</h6>
+              <span class="large" style="color: #868B94">{{data.weather[0].main }}</span>
+            </div>
+
+            <div class="d-flex align-items-center">
+              <div class="flex-grow-1" style="font-size: 1rem;">
+                <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1"> {{data.wind.speed}} m/sec </span></div>
+                <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1">{{data.main.humidity}}%</span>
+                </div>
+                
+              
+              </div>
+              <div>
+                  <img src={{weatherImages[data.weather[0].main.toLowerCase()]}} height="100px" width="100px">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

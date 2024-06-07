@@ -1,0 +1,13 @@
+
+.gradient-custom {
+  /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(9, 27, 43) 35%, rgba(0,0,0,1) 100%);
+  color:'white'
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+
+}

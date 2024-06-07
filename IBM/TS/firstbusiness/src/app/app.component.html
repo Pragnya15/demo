@@ -1,0 +1,66 @@
+<!-- <app-nav></app-nav>
+<app-page></app-page>
+<app-footer></app-footer> -->
+
+  <!-- <select>
+    <option  *ngFor="let item of listCountry" value="{{item}}">{{item}}</option>
+  </select>
+<br><br>
+  <input type="checkbox" id="chk" name="chk" value="Accept Terms and Conditions" (click)="onClick()">
+  <label for="chk"> Accept Terms and Conditions</label><br>
+  <div *ngIf="flag">
+  <button>Submit</button>
+  </div> -->
+  <!-- <div class="row">
+  <div class="col-sm-6">
+  <div class="card mb-3 " style="width: 18rem;">
+    <div *ngFor="let housingLocation of housingLocationList">
+    <img class="card-img-top" src="{{housingLocation.photo}} " alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{housingLocation.name}}</h5>
+      <p class="card-text">{{housingLocation.city}}<br>{{housingLocation.state}}<br>
+        Available Units:{{housingLocation.availableUnits}}
+      </p>
+      <span *ngIf="housingLocation.wifi" >
+      <img src="https://th.bing.com/th/id/R.7a2cf67738ce0737286952c4fcb87447?rik=bBnqsww0J1FOkA&riu=http%3a%2f%2fmedia.idownloadblog.com%2fwp-content%2fuploads%2f2016%2f02%2fwifi-icon.png&ehk=PuT%2bPbehUptr3CYuCVr%2bE%2b%2f45bpV%2fTvZDCdPCE1QStE%3d&risl=&pid=ImgRaw&r=0" height="30px"  >
+      </span>
+    <span *ngIf="housingLocation.laundry">
+      <img src="https://images.creativemarket.com/0.1.0/ps/7552321/1820/1214/m1/fpnw/wm1/laundry-washing-wash-clothes-washing-machine-house-work-housekeeping-clean-electronic-.jpg?1578456380&s=7a9129f3af43ddb68d00638b50fd219e" height="50px">
+    </span>
+    </div>
+  </div>
+  </div>
+</div>
+</div> -->
+
+
+
+<!-- <div class="row">
+  <div class="col-sm-4" *ngFor="let housingLocation of housingLocationList">
+    <div class="card mb-3 " style="width: 18rem;">
+      <img class="card-img-top" src="{{housingLocation.photo}}" height="200px" width="300px" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{housingLocation.name}}</h5>
+        <p class="card-text">{{housingLocation.city}}<br>{{housingLocation.state}}<br> Available Units:{{housingLocation.availableUnits}}</p>
+        <span *ngIf="housingLocation.wifi">
+          <img src="https://th.bing.com/th/id/R.7a2cf67738ce0737286952c4fcb87447?rik=bBnqsww0J1FOkA&riu=http%3a%2f%2fmedia.idownloadblog.com%2fwp-content%2fuploads%2f2016%2f02%2fwifi-icon.png&ehk=PuT%2bPbehUptr3CYuCVr%2bE%2b%2f45bpV%2fTvZDCdPCE1QStE%3d&risl=&pid=ImgRaw&r=0" height="30px">
+        </span>
+        <span *ngIf="housingLocation.laundry">
+          <img src="https://images.creativemarket.com/0.1.0/ps/7552321/1820/1214/m1/fpnw/wm1/laundry-washing-wash-clothes-washing-machine-house-work-housekeeping-clean-electronic-.jpg?1578456380&s=7a9129f3af43ddb68d00638b50fd219e" height="50px">
+        </span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="form-check form-switch">
+  <!-- <img src="{{value}}" height="200px" width="250px"> -->
+  <input class="form-check-input" type="checkbox" [(ngModel)]="lightOn" role="switch" id="flexSwitchCheckChecked" checked (change)="toggleLight()">
+  <img *ngIf="lightOn" src="https://th.bing.com/th/id/R.c9087665b208a15b9e0ee79d2f683194?rik=MbCn9lg8h4wSCQ&pid=ImgRaw&r=0" height="200px" width="250px" >
+  <img *ngIf="!lightOn" src="https://jooinn.com/images/isolated-light-bulb-1.jpg" height="200px" width="250px">
+  <!-- <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label> -->
+</div>
+
+
+
+

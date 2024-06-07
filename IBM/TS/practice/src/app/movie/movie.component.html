@@ -1,0 +1,32 @@
+<ul >
+
+    <li *ngFor="let movie of movies;index as i"  [ngClass]="i%2==0?'red':'green'">{{i}}-{{movie.name}} -{{movie.rating}} -{{movie.language}}</li>
+</ul>
+
+<!-- <input type="radio" id="red" name="color" value="RED" [(ngModel)]="isColor" (change)="color('red')">
+<label for="red">RED</label><br>
+<input type="radio" id="green" name="color" value="GREEN" [(ngModel)]="isColor" (change)="color('green')" >
+<label for="green">GREEN</label><br>
+<div [ngClass]="isColor ?'red':'green'">
+<p>Hello</p>
+</div> -->
+
+<!-- <input type="checkbox" id="bold" name="bold" value="bold"  (click)=>
+<label for="bold">Bold</label><br>
+<input type="checkbox" id="italic" name="italic" value="italic"  (click)="show('italic')">
+<label for="italic">Italic</label><br>
+<p [ngStyle]="{'font-style':attribute?'bold':'italic'}">This is Angular</p> -->
+
+<!-- <ul >
+    <li *ngFor="let movie of movies;index as i"  [ngStyle]='{color:getColor(movie.language)}'> {{i}}-{{movie.name}} -{{movie.rating}} -{{movie.language}}</li>
+</ul> -->
+
+    <input type="radio" name="size" (click)="size='50px'">Large
+    <input type="radio" name="size" (click)="size='10px'">Small
+  
+<p [appMydir]="size">Change size</p>
+
+<!-- <p [appMydir]="size"> Change the size</p> -->
+
+<!-- <p appMydir> This is not going to be Highlight</p> -->
+
